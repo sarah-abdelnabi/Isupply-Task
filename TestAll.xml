@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+
+    <test name="Test1">
+        <classes>
+            <class name="SeleniumSearch"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="uploadFile"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="DynamicLoading"/>
+        </classes>
+    </test>
+</suite>
