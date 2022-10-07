@@ -42,17 +42,6 @@ public class SeleniumSearch {
         Assert.assertTrue(search.header(driver).getText().contains("What is Selenium WebDriver?"));
     }
 
-    //Taking screenshot of the site that had a failure
-    @AfterMethod
-    public void takeScreenShot(ITestResult result) throws IOException {
-        if (ITestResult.FAILURE == result.getStatus())
-        {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File source=ts.getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source,new File("./ScreenShots/" +result.getName()+".png"));
-        }
-    }
-
     @AfterTest
     public void closeBrowser() throws InterruptedException {
         driver.quit();

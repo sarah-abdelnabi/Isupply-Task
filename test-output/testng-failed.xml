@@ -8,6 +8,7 @@
           <include name="search"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
+          <include name="takeScreenShot"/>
         </methods>
       </class> <!-- SeleniumSearch -->
     </classes>
